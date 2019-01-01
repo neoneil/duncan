@@ -1,0 +1,90 @@
+
+.row1 {
+    background:#ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    //background: #FFFFF0;
+    text-align: center; 
+    line-height: 1.4em; 
+    padding-left:12%;
+    
+}
+.text1 {
+    
+    text-align: center;
+    padding: 5% 3%;
+}
+.font-resize {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size:1.3em; 
+}
+.t1 {
+    background: red;
+}
+.t2 {
+    background:green;
+}
+.t3 {
+    background: grey;
+}
+.t4 {
+    background: blue;
+}
+.center-content {
+    
+}
+.images {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    //background: #A9A9A9;
+    padding: 2% 2%;
+}
+.title {
+    color: #3c4858;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+    font-weight: 700;
+}
+.center-content {
+    // display: flex;
+    // justify-content: center;
+    text-align: center;
+
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .col-6 {
+        max-width: 35%;
+        margin-left: 7%;
+    }
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+
+}

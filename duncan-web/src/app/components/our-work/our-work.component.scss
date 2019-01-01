@@ -1,0 +1,131 @@
+* {
+   //background: #ccc;
+}
+*:focus {
+    outline: none;
+}
+.row1 {
+    padding-top: 5%;
+}
+.row2 {
+    padding: 2%;
+    //background: #FFFFF0;
+    display:flex;
+    justify-content: flex-start;
+
+    
+}
+.row3 {
+    padding: 2%;
+    //background: #808080;;
+}
+.row4 {
+    padding: 2%;
+    //background: #696969;
+}
+.text1 {
+    text-align:center;
+}
+
+
+.slide1 {
+    // margin-top: 2%;
+    transform: rotate(-4deg);
+    // margin-bottom: 3%;
+    width: 70vw;
+    height: 32vw;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../../assets/images/EDITED/slider-background.jpg');
+    
+}
+.slide2 {
+    // margin-top: 2%;
+    margin-right: 20px;;
+    transform: rotate(4deg);
+    // margin-bottom: 2%;
+    width: 40vw;
+    height: 35vw;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../../assets/images/EDITED/slider-background.jpg');
+}
+
+.slide3 {
+    // margin-top: 2%;
+    transform: rotate(-3deg);
+    // margin-bottom: 2%;
+    width: 70vw;
+    height: 32vw;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../../assets/images/EDITED/slider-background.jpg');
+}
+.back-resize {
+    border-radius: .5em;
+    max-width: 100%;
+ 
+}
+.test {
+    padding-top: 2%;
+    padding-bottom: 3%;
+    max-width: 100%;
+    height: auto;
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+
+ }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .row2 {
+        padding: 5%;
+        background: red;
+    }
+  }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+
+ }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+
+}
+
+
+.call-button {
+    // margin-top: 150px;
+    position: relative;
+    margin-left: 60px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.button-text {
+    padding-bottom: 50px;
+    color: #003359;
+    
+}
+.call-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    span {
+        //background: red;
+        
+    }
+    a {
+      
+        //background: yellow;
+    }
+}

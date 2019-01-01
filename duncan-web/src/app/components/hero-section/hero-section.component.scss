@@ -1,0 +1,166 @@
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+.hero {
+    width: 98.8vw;
+    height: 100vh;
+    background-image: url('/src/assets/images/EDITED/hero_image.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; 
+    overflow:hidden;
+}
+
+.hero__logo--resize {
+    position: relative;
+    max-width: 100%; 
+    animation: enter-from-left 2.5s forwards cubic-bezier(0.6,0.1,0.2,0.7);
+}
+.hero__constructions--resize {
+    position: absolute;
+    max-width: 100%;
+    height: auto; 
+    animation: enter-from-right 2.5s 0s both cubic-bezier(0.6,0.1,0.2,0.7),
+               disappear 1s 4s both linear,
+               show-again 1s 11s forwards linear;
+    
+}
+.hero__slogan--resize {
+    display: block;
+    opacity: 1;
+    max-width: 100%;
+    height: auto; 
+    animation: slogan-enter-from-middle;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);
+    animation-delay: 6s;
+}
+.others-resize {
+    max-width: 135%;
+}
+.row1 {
+    background: #2F4F4F;
+}
+.row2 {
+    background: #708090;
+}
+
+// duncan animation
+.col4 {
+    background: #A9A9A9;
+    
+}
+.when-others-cant {
+    .when{
+    position: relative;
+    animation: when .6s 5s both linear,
+               disappear 1s 10s forwards, linear;
+    
+    }
+    .others {
+    position: relative;
+    animation: others .6s 5.5s both linear,
+               disappear 1s 10s forwards, linear;
+ 
+    }
+    .cant {
+    position: relative;
+    animation: cant .6s 6s both linear,
+               disappear 1s 10s forwards, linear;
+    }
+}
+@keyframes enter-from-left {
+    0% {left: -500px}
+    100% {left: 0px}
+}
+@keyframes enter-from-right {
+    0% {left: 2000px}
+    100% {left: 0%}
+    
+}
+@keyframes enter-from-right-for-sm {
+    0% {left: 2000px}
+    100% {left: 10%}
+    
+}
+@keyframes when {
+    0% {left: 50%; opacity: 0 }
+    100% {left: 0px; opacity: 1}
+    
+}
+@keyframes others {
+    0% {left: 50%; opacity: 0 }
+    100% {left: 0px; opacity: 1}
+    
+}
+@keyframes cant {
+    0% {left: 50%; opacity: 0}
+    100% {left: 0px; opacity: 1}
+    
+}
+@keyframes disappear {
+    0% { opacity: 1}
+    100% { opacity: 0} 
+}
+@keyframes show-again {
+    from { opacity: 0}
+    to { opacity: 1} 
+}
+
+.col8 {
+    background: #FFFFF0;
+}
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .sm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .col-12 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero__logo--resize{
+      max-width: 40%;
+   }
+   .hero__constructions--resize {
+       max-width: 80%;
+       animation: enter-from-right-for-sm 2.5s 0s both cubic-bezier(0.6,0.1,0.2,0.7),
+       disappear 1s 4s both linear,
+       show-again 1s 11s forwards linear;    
+   }
+   .hero__slogan--resize {
+    flex-direction: column;
+    max-width: 30%;
+   }
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+
+}
+
+// @media (max-width: @screen-xs-max) { ... }
+// @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+// @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+// @media (min-width: @screen-lg-min) { ... }
