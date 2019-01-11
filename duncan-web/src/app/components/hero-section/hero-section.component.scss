@@ -1,18 +1,20 @@
+
 .nopadding {
     padding: 0 !important;
     margin: 0 !important;
  }
 
 .hero {
-    width: 98.8vw;
+    width: 100vw;
     height: 100vh;
     background-image: url('/src/assets/images/EDITED/hero_image.jpg');
     background-size: cover;
+    //background-size: 100% 100%;
     background-position: center center;
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
     display: flex;
     align-items: center; 
-    overflow:hidden;
+    overflow-x:hidden;  
 }
 
 .hero__logo--resize {
@@ -21,6 +23,8 @@
     animation: enter-from-left 2.5s forwards cubic-bezier(0.6,0.1,0.2,0.7);
 }
 .hero__constructions--resize {
+    // overflow: hidden;
+    // position: relative;
     position: absolute;
     max-width: 100%;
     height: auto; 
@@ -39,6 +43,7 @@
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);
     animation-delay: 6s;
+    
 }
 .others-resize {
     max-width: 135%;
@@ -53,6 +58,8 @@
 // duncan animation
 .col4 {
     // background: #A9A9A9;
+    
+        //overflow-x:hidden;  
     
 }
 .when-others-cant {
@@ -75,11 +82,12 @@
     }
 }
 @keyframes enter-from-left {
+
     0% {left: -500px}
     100% {left: 0px}
 }
 @keyframes enter-from-right {
-    0% {left: 2000px}
+    0% {left: 1000px}
     100% {left: 0%}
     
 }
