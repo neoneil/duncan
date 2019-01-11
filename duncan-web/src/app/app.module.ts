@@ -9,6 +9,7 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
 import { ChooseUsComponent } from './components/choose-us/choose-us.component';
 import { OurWorkComponent } from './components/our-work/our-work.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { TestCarouselComponent } from './components/test-carousel/test-carousel.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     ChooseUsComponent,
     OurWorkComponent,
     ContactUsComponent,
+    TestCarouselComponent,
   ],
   imports: [
     BrowserModule,
