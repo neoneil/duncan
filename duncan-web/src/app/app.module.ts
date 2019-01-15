@@ -10,6 +10,8 @@ import { ChooseUsComponent } from './components/choose-us/choose-us.component';
 import { OurWorkComponent } from './components/our-work/our-work.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { TestCarouselComponent } from './components/test-carousel/test-carousel.component';
+import { GridComponent } from './components/grid/grid.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,9 @@ import { TestCarouselComponent } from './components/test-carousel/test-carousel.
     OurWorkComponent,
     ContactUsComponent,
     TestCarouselComponent,
+    GridComponent,
+    FooterComponent
+  
   ],
   imports: [
     BrowserModule,
